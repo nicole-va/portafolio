@@ -1,0 +1,40 @@
+/* ============================================================
+   css/responsive.css
+   Mobile first → tablet (768px) → desktop (1024px)
+   ============================================================ */
+
+@media (min-width: 768px) {
+
+  /* Navbar */
+  .navbar__links     { display: flex; }
+  .navbar__cv        { display: inline-flex; }
+  .navbar__hamburger { display: none; }
+  .navbar__mobile    { display: none !important; }
+
+  /* Hero */
+  .hero                { grid-template-columns: 1fr 1fr; }
+  .hero__left          { border-bottom: none; border-right: 0.5px solid var(--color-border); padding: 3rem 2.5rem; }
+  .hero__right         { padding: 3rem 2.5rem; }
+
+  /* Experience */
+  .experience          { padding: 3rem 2.5rem; }
+  .experience__grid    { grid-template-columns: 1fr 1fr; }
+
+  /* Projects */
+  .projects            { padding: 3rem 2.5rem; }
+  .projects__grid      { grid-template-columns: 1fr 1fr; }
+
+  /* Contact */
+  .contact__inner      { flex-direction: row; align-items: center; justify-content: space-between; padding: 3rem 2.5rem; }
+}
+
+@media (min-width: 1024px) {
+
+  /* Projects: 3 columnas */
+  .projects__grid      { grid-template-columns: repeat(3, 1fr); }
+
+  /* Más padding en secciones */
+  .experience          { padding: 3.5rem 4rem; }
+  .projects            { padding: 3.5rem 4rem; }
+  .skills .section-header { padding: 0 4rem; }
+}

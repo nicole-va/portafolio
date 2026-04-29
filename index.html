@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+  <meta name="description" content="Portafolio de Nicole Velásquez — Fullstack Developer especializada en Angular, Spring Boot y Oracle." />
+  <title>Nicole Velásquez — Fullstack Developer</title>
+
+  <!-- CSS en orden: variables → base → componentes → layout → responsive -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- ======================================================
+       NAVBAR
+       ====================================================== -->
+  <header class="navbar" id="navbar">
+    <nav class="navbar__inner">
+
+      <span class="navbar__logo">NV.DEV</span>
+
+      <!-- Links — visibles solo en desktop -->
+      <ul class="navbar__links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#tecnologias">Tecnologías</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+
+      <div class="navbar__actions">
+        <!-- Toggle tema claro/oscuro -->
+        <button id="theme-toggle" class="btn-icon" aria-label="Activar modo oscuro">🌙</button>
+
+        <!-- Descarga CV — visible solo en desktop -->
+        <a href="./assets/NicoleVelasquez_CV.pdf" download class="btn btn--primary navbar__cv">
+          descargar cv
+        </a>
+
+        <!-- Hamburguesa — visible solo en móvil -->
+        <button id="menu-toggle" class="btn-icon navbar__hamburger" aria-label="Abrir menú" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Menú móvil desplegable -->
+    <div id="mobile-menu" class="navbar__mobile" aria-label="Menú de navegación">
+      <a href="#inicio">Inicio</a>
+      <a href="#tecnologias">Tecnologías</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+      <a href="./assets/NicoleVelasquez_CV.pdf" download class="btn btn--primary">descargar cv</a>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- ====================================================
+         HERO
+         ==================================================== -->
+    <section id="inicio" class="hero">
+
+      <div class="hero__left">
+        <div>
+          <p class="hero__tag">Fullstack Developer</p>
+
+          <h1 class="hero__name">
+            Nicole Isabel<br>
+            <span class="text-accent">Velásquez</span><br>
+            Arroyo
+          </h1>
+
+          <p class="hero__desc">
+            Ingeniera de software especializada en backend con Oracle / Spring Boot
+            y frontend con Angular. Apasionada por la migración de sistemas legacy
+            a arquitecturas web modernas.
+          </p>
+        </div>
+
+        <div class="hero__badges">
+          <span class="badge">Guayaquil, Ecuador</span>
+          <span class="badge">25 años</span>
+          <span class="badge">Ing. TI — UG 2024</span>
+        </div>
+      </div>
+
+      <div class="hero__right">
+        <div class="hero__stat">
+          <span class="hero__stat-num">2+</span>
+          <span class="hero__stat-label">años de<br>experiencia</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-num">10+</span>
+          <span class="hero__stat-label">tecnologías<br>dominadas</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-num">3</span>
+          <span class="hero__stat-label">proyectos<br>destacados</span>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- ====================================================
+         TECNOLOGÍAS — carrusel marquee
+         ==================================================== -->
+    <section id="tecnologias" class="skills">
+
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2 class="section-title">Tecnologías</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills__rows">
+
+        <!-- Frontend -->
+        <div class="marquee-row">
+          <span class="marquee-row__label">Frontend</span>
+          <div class="marquee-outer">
+            <div class="marquee-track" style="animation-duration:20s;">
+              <!-- Original -->
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"   alt="Angular"><span>Angular</span></div>
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript"><span>TypeScript</span></div>
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"           alt="HTML5"><span>HTML5</span></div>
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"             alt="CSS3"><span>CSS3</span></div>
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg"      alt="WordPress"><span>WordPress</span></div>
+              <!-- Duplicado para efecto infinito -->
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"   alt="Angular"><span>Angular</span></div>
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript"><span>TypeScript</span></div>
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"           alt="HTML5"><span>HTML5</span></div>
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"             alt="CSS3"><span>CSS3</span></div>
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg"      alt="WordPress"><span>WordPress</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="marquee-row">
+          <span class="marquee-row__label">Backend</span>
+          <div class="marquee-outer">
+            <div class="marquee-track marquee-track--reverse" style="animation-duration:26s;">
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"    alt="Java"><span>Java</span></div>
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot"><span>Spring Boot</span></div>
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"      alt="PHP"><span>PHP</span></div>
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#"><span>C#</span></div>
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="PL/SQL"><span>PL/SQL</span></div>
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"    alt="Java"><span>Java</span></div>
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot"><span>Spring Boot</span></div>
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"      alt="PHP"><span>PHP</span></div>
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#"><span>C#</span></div>
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="PL/SQL"><span>PL/SQL</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Base de datos -->
+        <div class="marquee-row">
+          <span class="marquee-row__label">Base datos</span>
+          <div class="marquee-outer">
+            <div class="marquee-track" style="animation-duration:22s;">
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle DB"><span>Oracle DB</span></div>
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"   alt="SQL"><span>SQL</span></div>
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"   alt="HeidiSQL"><span>HeidiSQL</span></div>
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle DB"><span>Oracle DB</span></div>
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"   alt="SQL"><span>SQL</span></div>
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"   alt="HeidiSQL"><span>HeidiSQL</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DevOps & Tools -->
+        <div class="marquee-row">
+          <span class="marquee-row__label">DevOps</span>
+          <div class="marquee-outer">
+            <div class="marquee-track marquee-track--reverse" style="animation-duration:28s;">
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/openshift/openshift-original.svg"    alt="OpenShift"><span>OpenShift</span></div>
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"          alt="Docker"><span>Docker</span></div>
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg" alt="Kafka"><span>Kafka</span></div>
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"               alt="Git"><span>Git</span></div>
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg"        alt="Postman"><span>Postman</span></div>
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apigee/apigee-original.svg"          alt="Apigee"><span>Apigee</span></div>
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/openshift/openshift-original.svg"    alt="OpenShift"><span>OpenShift</span></div>
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"          alt="Docker"><span>Docker</span></div>
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg" alt="Kafka"><span>Kafka</span></div>
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"               alt="Git"><span>Git</span></div>
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg"        alt="Postman"><span>Postman</span></div>
+              <div class="tech-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apigee/apigee-original.svg"          alt="Apigee"><span>Apigee</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <p class="skills__hint">— pasa el cursor para pausar —</p>
+    </section>
+
+
+    <!-- ====================================================
+         EXPERIENCIA
+         ==================================================== -->
+    <section id="experiencia" class="experience">
+
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Experiencia laboral</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="experience__grid">
+
+        <!-- Trabajo 1 -->
+        <article class="exp-card exp-card--featured">
+          <span class="exp-card__badge">más reciente</span>
+          <p class="exp-card__period">Ene 2024 — Feb 2026</p>
+          <h3 class="exp-card__role">Ingeniera de Proyectos</h3>
+          <p class="exp-card__company">Sudamérica de Software</p>
+          <ul class="exp-card__list">
+            <li class="exp-card__item">Desarrollo y mantenimiento del sistema NAF (contabilidad, inventarios, cuentas por pagar)</li>
+            <li class="exp-card__item">Procedimientos PL/SQL, funciones y paquetes en Oracle DB</li>
+            <li class="exp-card__item">Migración de Docker a OpenShift</li>
+            <li class="exp-card__item">Migración Oracle Forms a Spring Boot + Angular</li>
+            <li class="exp-card__item">Nuevas funcionalidades en PrimeFaces y JSF</li>
+            <li class="exp-card__item">Gestión y seguimiento de tickets de soporte</li>
+          </ul>
+        </article>
+
+        <!-- Trabajo 2 -->
+        <article class="exp-card">
+          <p class="exp-card__period">Jun 2023 — Nov 2023</p>
+          <h3 class="exp-card__role">Pasante de Desarrollo</h3>
+          <p class="exp-card__company">Security Data</p>
+          <ul class="exp-card__list">
+            <li class="exp-card__item">Soporte nivel 1 en área de desarrollo</li>
+            <li class="exp-card__item">Corrección de errores en frontend y backend</li>
+            <li class="exp-card__item">Angular, WordPress, HTML, CSS, PHP, JavaScript, HeidiSQL</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- ====================================================
+         PROYECTOS
+         ==================================================== -->
+    <section id="proyectos" class="projects">
+
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Proyectos</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="projects__grid">
+
+        <!-- Proyecto 1 -->
+        <article class="proj-card">
+          <div class="proj-card__thumb proj-card__thumb--blue">
+            <span class="proj-card__num">001</span>
+            <span aria-hidden="true">🛒</span>
+          </div>
+          <div class="proj-card__body">
+            <h3 class="proj-card__title">ShopTrack — Gestión de inventario</h3>
+            <p class="proj-card__desc">App web con CRUD completo, reportes en tiempo real, alertas de stock bajo y exportación a Excel.</p>
+            <div class="proj-card__tags">
+              <span class="proj-tag">Angular</span>
+              <span class="proj-tag">Spring Boot</span>
+              <span class="proj-tag">Oracle DB</span>
+              <span class="proj-tag">PL/SQL</span>
+            </div>
+          </div>
+          <div class="proj-card__links">
+            <a href="https://github.com/tuusuario/shoptrack" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">GitHub</a>
+            <a href="https://shoptrack.vercel.app"           target="_blank" rel="noopener noreferrer" class="btn btn--primary">Demo ↗</a>
+          </div>
+        </article>
+
+        <!-- Proyecto 2 -->
+        <article class="proj-card">
+          <div class="proj-card__thumb proj-card__thumb--green">
+            <span class="proj-card__num">002</span>
+            <span aria-hidden="true">📋</span>
+          </div>
+          <div class="proj-card__body">
+            <h3 class="proj-card__title">TaskFlow — Gestión de tareas</h3>
+            <p class="proj-card__desc">Sistema Kanban con autenticación JWT, roles de usuario y notificaciones. API REST documentada con Swagger.</p>
+            <div class="proj-card__tags">
+              <span class="proj-tag">Java</span>
+              <span class="proj-tag">Spring Boot</span>
+              <span class="proj-tag">Angular</span>
+              <span class="proj-tag">Docker</span>
+            </div>
+          </div>
+          <div class="proj-card__links">
+            <a href="https://github.com/tuusuario/taskflow" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">GitHub</a>
+            <a href="https://taskflow.vercel.app"           target="_blank" rel="noopener noreferrer" class="btn btn--primary">Demo ↗</a>
+          </div>
+        </article>
+
+        <!-- Proyecto 3 -->
+        <article class="proj-card">
+          <div class="proj-card__thumb proj-card__thumb--amber">
+            <span class="proj-card__num">003</span>
+            <span aria-hidden="true">📊</span>
+          </div>
+          <div class="proj-card__body">
+            <h3 class="proj-card__title">FinDash — Dashboard financiero</h3>
+            <p class="proj-card__desc">Panel con métricas financieras, gráficas interactivas, integración con API de pagos y reportes en PDF.</p>
+            <div class="proj-card__tags">
+              <span class="proj-tag">Angular</span>
+              <span class="proj-tag">TypeScript</span>
+              <span class="proj-tag">Spring Boot</span>
+              <span class="proj-tag">SQL</span>
+            </div>
+          </div>
+          <div class="proj-card__links">
+            <a href="https://github.com/tuusuario/findash" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">GitHub</a>
+            <a href="https://findash.vercel.app"           target="_blank" rel="noopener noreferrer" class="btn btn--primary">Demo ↗</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ======================================================
+       CONTACTO / FOOTER
+       ====================================================== -->
+  <footer id="contacto" class="contact">
+    <div class="contact__inner">
+
+      <div class="contact__cta">
+        <p class="contact__headline">
+          ¿Tienes un proyecto? <span class="text-accent">Hablemos.</span>
+        </p>
+        <p class="contact__sub">Disponible para oportunidades freelance y full-time.</p>
+      </div>
+
+      <div class="contact__actions">
+        <a href="mailto:nicolevelazque@outlook.com" class="btn btn--ghost">nicolevelazque@outlook.com</a>
+        <a href="tel:0982848616"                   class="btn btn--ghost">0982848616</a>
+        <a href="mailto:nicolevelazque@outlook.com" class="btn btn--primary">contratar ↗</a>
+      </div>
+
+    </div>
+
+    <div class="contact__footer">
+      <p>© <span id="current-year"></span> Nicole Velásquez Arroyo — Hecho con HTML + CSS + JS</p>
+    </div>
+  </footer>
+
+  <script src="js/theme.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
